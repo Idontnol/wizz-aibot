@@ -39,7 +39,7 @@ style.textContent = `
     justify-content: space-between;
     align-items: center;
     padding: 6px;
-    background-color: #fd7e14;
+    background-color: #b97fd8;
     color: #fff;
   }
 
