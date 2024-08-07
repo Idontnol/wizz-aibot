@@ -468,7 +468,7 @@ const sendQueryFaq = async (query) => {
   isTyping = true;
   updateChat();
 
-  const response = await fetch(`https://wizzmedias-buzz-backend.vercel.app/api/chatbot-test23/${query}`);
+  const response = await fetch(`https://wizzmedias-buzz-backend.vercel.app/api/chatbot-test23/${query} --answer in marathi language if question is in marathi language otherwise answer in english`);
   let { answer } = await response.json();
   let converter = new showdown.Converter();
   answer = converter.makeHtml(answer);
@@ -500,7 +500,7 @@ const sendQuery = async () => {
   isTyping = true;
   updateChat();
 
-  const response = await fetch(`https://wizzmedias-buzz-backend.vercel.app/api/chatbot-test23/${query}`);
+  const response = await fetch(`https://wizzmedias-buzz-backend.vercel.app/api/chatbot-test23/${query} --answer in marathi language if question is in marathi language otherwise answer in english`);
   let { answer } = await response.json();
   let converter = new showdown.Converter();
   answer = converter.makeHtml(answer);
