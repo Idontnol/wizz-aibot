@@ -283,7 +283,7 @@ chatbotWrapper.innerHTML = `
 document.body.appendChild(chatbotWrapper);
 
 // Add JavaScript functionality
-let chatData = [{ "answer": "Hello! I am your AI assistant. How can I help you today?" }];
+let chatData = [{ "answer": "Hello 🤖 I/'m here to guide you through our courses and provide all the information you need. What would you like to explore today?" }];
 let query = "";
 let isCollapsed = true;
 let isTyping = false;
