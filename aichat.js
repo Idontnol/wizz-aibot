@@ -287,7 +287,7 @@ const fetchChatParams=async()=>{
     updateChatBody();
 }
 const applyChatParams=()=>{
-    const newStyle = document.createElement('style');
+    const newStyle = document.querySelector('.style');
     newStyle.textContent = `
     .chatbot-header {
         background-color: ${headerColor};
