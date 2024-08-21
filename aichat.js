@@ -278,7 +278,7 @@ const fetchChatParams=async()=>{
     //console.log(result.params);
     const chatParams=result?.params||{};
     welcomeMessage = chatParams['welcome-message'];
-    // headerColor = chatParams['chat-color'];
+    headerColor = chatParams['chat-color'];
     chatIcon = chatParams['chat-icon'];
     chatCoordinates = chatParams['chat-coordinates']?.split(",");
     console.log("passed");
