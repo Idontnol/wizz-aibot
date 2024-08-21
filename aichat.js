@@ -1,6 +1,6 @@
 // Create and inject CSS
-const style = document.createElement('style');
-style.textContent = `
+const chatStyle = document.createElement('wizzchat-style');
+chatStyle.textContent = `
   .chatbot-wrapper {
     display: flex;
     justify-content: center;
@@ -258,7 +258,7 @@ style.textContent = `
   transition: height 0.3s ease;
 }
 `;
-document.head.appendChild(style);
+document.head.appendChild(chatStyle);
 
 // Create and inject HTML
 const scriptTag = document.currentScript;
@@ -287,7 +287,7 @@ const fetchChatParams=async()=>{
     updateChatBody();
 }
 const applyChatParams=()=>{
-    const newStyle = document.querySelector('.style');
+    const newStyle = document.querySelector('.wizzchat-style');
     newStyle.textContent = `
     .chatbot-header {
         background-color: ${headerColor};
