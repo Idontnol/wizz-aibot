@@ -263,7 +263,7 @@ document.head.appendChild(style);
 // Create and inject HTML
 const scriptTag = document.currentScript;
 // console.log(scriptTag);
-const chatKey=scriptTag.getAttribute('chat-key');
+const chatKey=scriptTag.getAttribute('chatKey');
 let headerColor,welcomeMessage,chatIcon,chatCoordinates,LandingPage;
 
 const updateChatBody = () => {
