@@ -361,7 +361,7 @@ const sendQuery = async () => {
   isTyping = true;
   updateChat();
   console.log(query);
-  const response = await fetch(`https://wizzmedias-buzz-backend.vercel.app/api/chatbot-test26/${query}`);
+  const response = await fetch(`https://wizzmedias-buzz-backend.vercel.app/api/chatbot/query/?question=${query}&key=${chatKey}`);
   let { answer } = await response.json();
   let converter = new showdown.Converter();
   answer = converter.makeHtml(answer);
